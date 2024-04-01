@@ -1,3 +1,6 @@
+@import "utilities";
+@import "config";
+@import "btnConfig";
 
 * {
   box-sizing: border-box;
@@ -6,9 +9,11 @@
 }
 
 body {
-  background-color: $light-color;
-  font-family: $font-stack;
+  background-color: $primary-color;
+  font-family: font-stack;
   line-height: 1;
+  color: $text-color;
+  font-weight: map-get($font-weights, bold);
 }
 
 img {
@@ -17,9 +22,15 @@ img {
 
 a {
   text-decoration: none;
+  color: $text-color;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .hero {
+  
   // This is where the bulk of the SCSS styling needs to be done
 
   // Take a look at the other files we've built already. How can they be useful here?
