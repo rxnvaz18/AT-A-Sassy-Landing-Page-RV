@@ -31,17 +31,43 @@ ul {
 .hero {
   background-color: $primary-color;
   color: $text-color;
-  @include flexCenter;
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+  }
+  .header {
+    width: 100%;
+    @include flexCenter;
+    
+    nav {
+      @include flexCenter;
+      float: right;
+    
+      li {
+        display: inline-block;
+        padding: 0px 20px;
+      }
+      
+  }
+  }
   .banner {
-    font-size: 25px;
-    width: 20%;
+    font-size: 20px;
+    width:50vw; 
     float: left;
   }
-  .nav {
-    float: right;
-    width: 20%;
-  }
+  
   .random {
     width: 400px;
   }
