@@ -9,10 +9,9 @@
 }
 
 body {
-  background-color: $primary-color;
-  font-family: font-stack;
+  background-color: $light-color;
+  font-family: sans-serif;
   line-height: 1;
-  color: $text-color;
   font-weight: map-get($font-weights, bold);
 }
 
@@ -30,7 +29,22 @@ ul {
 }
 
 .hero {
-  
+  background-color: $primary-color;
+  color: $text-color;
+  @include flexCenter;
+
+  .banner {
+    font-size: 25px;
+    width: 20%;
+    float: left;
+  }
+  .nav {
+    float: right;
+    width: 20%;
+  }
+  .random {
+    width: 400px;
+  }
   // This is where the bulk of the SCSS styling needs to be done
 
   // Take a look at the other files we've built already. How can they be useful here?

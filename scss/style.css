@@ -39,10 +39,9 @@
 }
 
 body {
-  background-color: #000814;
-  font-family: font-stack;
+  background-color: #FFC300;
+  font-family: sans-serif;
   line-height: 1;
-  color: white;
   font-weight: 700;
 }
 
@@ -57,6 +56,29 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.hero {
+  background-color: #000814;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.hero .banner {
+  font-size: 25px;
+  width: 20%;
+  float: left;
+}
+.hero .nav {
+  float: right;
+  width: 20%;
+}
+.hero .random {
+  width: 400px;
 }
 
 .m-1 {
